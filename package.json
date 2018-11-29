@@ -139,7 +139,7 @@
     "deploy": "npm run prebuild && webpack --env.production -p --env.deploy",
     "deploy:beta": "npm run prebuild && webpack --env.beta -p --env.deploy",
     "deploy:staging": "npm run prebuild && webpack --env.staging -p --env.deploy",
-    "start": "webpack-dev-server --env.development --hot --inline --https",
+    "start": "webpack-dev-server --env.development --hot --inline --host 0.0.0.0",
     "server": "http-server ./dist --ssl --cert=./node_modules/webpack-dev-server/ssl/server.pem --key=./node_modules/webpack-dev-server/ssl/server.pem",
     "test": "jest --config jest.json",
     "generate-snapshot": "react-snapshot-test-generator",

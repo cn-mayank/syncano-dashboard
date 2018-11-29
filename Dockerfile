@@ -1,5 +1,5 @@
 FROM node:10.14.0-jessie
-ADD . /syncano/
-WORKDIR syncano
+ADD . /data/
+WORKDIR data
 RUN npm install
-CMD npm start
+CMD tail -f /dev/null
